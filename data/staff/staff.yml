@@ -13,12 +13,11 @@
     [Howdy](https://lukegonsalves.com)
   head_facilitator: true
 
-- image: /staff-pics/blake.webp
-  name: Blake Nicholas Haug
-  username: blakeh
-  email: blakeh@berkeley.edu
-  bio: |
-    [blakehaug.com](blakehaug.com) 
+- image: /staff-pics/elena.jpg
+  name: Elena Haug
+  username: elenah
+  email: elenah@ocf.berkeley.edu
+  bio: :)
   head_facilitator: false
 
 - image: /staff-pics/chenghao.jpg
