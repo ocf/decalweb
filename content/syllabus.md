@@ -26,7 +26,7 @@ Official course communications will primarily be sent via email (through Ed anno
 
 There are several ways you can get in contact with course facilitators:
 1. Make a post on Ed. (best for conceptual/debugging/content help)
-2. Send a message to #decal-general (or as a private message to a facilitator) either on [Slack][slack] or [Discord][discord]. (best for realtime communications)
+2. Send a message to #decal-general (or as a private message to a facilitator) on [Discord][discord]. (best for realtime communications)
 3. Email [decal@ocf.berkeley.edu][email]. (best for prospective students and matters that need to go on official record)
 
 ## Lecture
@@ -38,7 +38,7 @@ There will be 10 total required lectures for each track, as well as one optional
 ## Lab Assignments
 The primary assignment in this course will be **weekly lab work**. Labs are designed to be be significantly hands-on. You will be working on real systems, configuring and fixing things, setting up services, and so on.
 
-Each lecture corresponds with a lab and will be releasedon Sundays.
+Each lecture corresponds with a lab and will be released on Sundays.
 
 Each lab will be due by the **Saturday, 11:59pm PST** after the lab section unless otherwise stated.
 
@@ -62,24 +62,23 @@ The following are required to receive credit for the course:
 
 ## Will the DeCal be offered next semester?
 Most likely. We are aiming to offer the decal every semester!
-You can check announcements or reach out to the decal committee over discord/slack.
+You can check announcements or reach out to the decal committee over Discord.
 
 ## I don't want units / wasn't accepted / am not a student. Can I audit this course?
 We are working hard to get all of our materials online this semester for everyone to access! Feel free to view our lectures or complete any of the labs on your own. (You will
-need your own Linux VM though- you can [install one locally](https://blog.storagecraft.com/the-dead-simple-guide-to-installing-a-linux-virtual-machine-on-windows/) or get one from a provider such as [DigitalOcean](https://www.digitalocean.com/).)
+need your own Linux VM though—you can [install one locally](https://blog.storagecraft.com/the-dead-simple-guide-to-installing-a-linux-virtual-machine-on-windows/) or get one from a provider such as [DigitalOcean](https://www.digitalocean.com/).)
 
 ## I'm stuck on a lab/concept! Where can I find help?
-The best way to get support with course content is to ask during scheduled lab times. If you need help at another time, feel free to ask on Ed, on our Slack channel at [#decal-general][slack], or on our [Discord channel][discord]. Logistics questions are best suited for email ([decal@ocf.berkeley.edu][email]).
+The best way to get support with course content is to ask during scheduled lab times. If you need help at another time, feel free to ask on Ed or on our [Discord channel][discord]. Logistics questions are best suited for email ([decal@ocf.berkeley.edu][email]).
 
 ## I have another question!
 Email us at [decal@ocf.berkeley.edu][email].
 
 [email]: mailto:decal@ocf.berkeley.edu
-[slack]: https://ocf.io/slack
 [discord]: https://ocf.io/discord
 
 # After this Course
 
-There's no substitute for real-world experience. If you'd like to get experience in a low-risk but real-world setting, consider [joining the OCF](https://ocf.io/getinvolved) as a volunteer staff member. There, you'll be able to put the things you learn in this course to use, and help other students while you're at it. Best of all- **there's no application process**! Just drop by and say hi :)
+There's no substitute for real-world experience. If you'd like to get experience in a low-risk but real-world setting, consider [joining the OCF](https://ocf.io/getinvolved) as a volunteer staff member. There, you'll be able to put the things you learn in this course to use, and help other students while you're at it. Best of all—**there's no application process**! Just drop by and say hi :)
 
-Weekly staff meetings are held Wednesdays at 8pm at the OCF lab.
+Weekly staff meetings are held Wednesdays at 7:30pm at the OCF lab.
