@@ -1,4 +1,9 @@
-{ stdenvNoCC, git, hugo, just }:
+{
+  stdenvNoCC,
+  git,
+  hugo,
+  just,
+}:
 
 stdenvNoCC.mkDerivation {
   name = "ocf-decal-web";
@@ -9,10 +14,14 @@ stdenvNoCC.mkDerivation {
   ];
 
   buildPhase = ''
+    runHook preBuild
     hugo
+    runHook postBuild
   '';
 
   installPhase = ''
+    runHook preInstall
     mv public $out
+    runHook postInstall
   '';
 }

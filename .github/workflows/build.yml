@@ -1,22 +1,63 @@
 name: Build and Deploy Decal Web
 
 on:
+  workflow_dispatch:
+  pull_request:
   push:
     branches:
-      - "main"
+      - main
 
 jobs:
-
   check-flake:
     runs-on: ci-ocf-decalweb
     steps:
       - uses: actions/checkout@v4
       - uses: DeterminateSystems/flake-checker-action@v9
 
+  build-container:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    env:
+      image_name: decalweb 
+      registry: ghcr.io/${{ github.repository_owner }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: cachix/install-nix-action@v31
+
+      - name: Build and tag image
+        run: |
+          IMAGE_TAG=$(sh $(nix build .#image --no-link --print-out-paths) 2>/dev/null | podman load -q | grep -oe "$image_name:.*$" | sed -e "s/$image_name://")
+          echo "image_tags=$IMAGE_TAG" >> $GITHUB_ENV
+
+      - name: Tag latest
+        if: github.ref == 'refs/heads/main'
+        run: |
+          podman tag $image_name:$image_tags $image_name:latest
+          echo "image_tags=$image_tags latest" >> $GITHUB_ENV
+
+      - name: Log in to GHCR
+        uses: redhat-actions/podman-login@v1
+        with:
+          username: ${{ github.actor }}
+          password: ${{ github.token }}
+          registry: ${{ env.registry }}
+
+      - name: Push to GHCR
+        id: push-ghcr
+        uses: redhat-actions/push-to-registry@v2
+        with:
+          image: ${{ env.image_name }}
+          tags: ${{ env.image_tags }}
+          registry: ${{ env.registry }}
+
+      - name: Print image url
+        run: echo "Image pushed to ${{ steps.push-ghcr.outputs.registry-paths }}"
+
   build_and_deploy:
-
     runs-on: ci-ocf-decalweb
-
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
