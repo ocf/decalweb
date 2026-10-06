@@ -45,8 +45,8 @@
   date: 10/06/2026
   name: Networking 101
   labdue: Sat. 10/10
-  hidelink: true
-  slides: https://docs.google.com/presentation/d/1BBUB66ESqUQ3DcL5BteSBZrdBnG6pFNGf7MRqSCEiNc/edit?usp=sharing
+  hidelink: false
+  slides: https://www.ocf.berkeley.edu/~erdaifuu/posts/week-5/
   video: 
 
 - id: 6
