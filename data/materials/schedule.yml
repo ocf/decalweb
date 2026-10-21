@@ -61,8 +61,8 @@
   date: 10/20/2026
   name: Security Fundamentals
   labdue: Sat. 10/24
-  hidelink: true
-  slides: https://docs.google.com/presentation/d/1gfWMRiaw_iDwvg0S3Rv2SwSyi6t6BhBp4-Rx02V9ZXo/edit?usp=sharing
+  hidelink: false
+  slides: https://docs.google.com/presentation/d/1as6OVcgf94BdXBI7wbvqtFV_N4FyW2uaw5JNhn38MjE/edit?usp=sharing
   video: 
 
 - id: 8
