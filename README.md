@@ -16,6 +16,7 @@ To archive the current year's website for a new semester, run `nix build`, and c
 Then, update the `/content/archives.md` page with the new archive. 
 
 ## TODO
+- Create asynchronous curriculum website for Decal! 
 - ~~make a template for staff bios lol: https://gohugo.io/templates/introduction/~~
 - update resources list for 2026
 - ~~staff training labs~~
