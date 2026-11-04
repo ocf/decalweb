@@ -77,8 +77,8 @@
   date: 11/03/2026
   name: Docker
   labdue: Sat. 11/7
-  hidelink: true
-  slides: https://docs.google.com/presentation/d/13gEWL-no6xEMxQ2d5DRPuPxQvDFfC0GyerTSbMeCgXc/edit?usp=sharing
+  hidelink: false
+  slides: https://docs.google.com/presentation/d/1h03SPe7Pqhn6ieQwC0LfIURtITzVQLBGSJ6IbE_vWzI
   video: 
 
 - id: 10
